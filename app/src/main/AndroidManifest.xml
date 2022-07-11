@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gttron.yukino.smpc.adminconsole">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_sadcicon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_sadcicon_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SMPC_AdminConsole">
+        <activity
+            android:name=".Login"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Displaycomplaint"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:screenOrientation="portrait">
+
+        </activity>
+    </application>
+
+</manifest>
